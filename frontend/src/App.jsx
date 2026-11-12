@@ -2,7 +2,7 @@ import {useEffect,useState} from 'react';
 import axios from 'axios';
 import {Droplets,BrainCircuit,Beaker,Activity,History,Download,RefreshCw,AlertTriangle,Info} from 'lucide-react';
 import {BarChart,Bar,XAxis,YAxis,Tooltip,ResponsiveContainer,CartesianGrid} from 'recharts';
-const API='http://127.0.0.1:8000/api';
+const API = '/api';
 const starter={sample_name:'PPT illustrative sample',ph:'6.4',dissolved_oxygen:'4.2',turbidity:'8',tds:'720',contamination:'0'};
 const colors={Excellent:'#16845b',Good:'#2777c7',Poor:'#d28a24',Unsuitable:'#c84d4d'};
 export default function App(){
