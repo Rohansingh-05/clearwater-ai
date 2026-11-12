@@ -8,7 +8,7 @@ from .wqi import calculate_wqi
 from .ml import predict
 from .train_model import MODELS, train_and_save
 
-DB=Path(__file__).resolve().parents[1]/"water_quality.db"
+DB = Path("/tmp/water_quality.db")
 app=FastAPI(title="Water Quality AI API",version="1.0.0",
             description="Traditional WQI and AI category prediction.")
 app.add_middleware(CORSMiddleware,allow_origins=["http://localhost:5173","http://127.0.0.1:5173"],
